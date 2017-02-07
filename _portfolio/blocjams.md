@@ -20,7 +20,9 @@ After going through a variety of tutorials and training material, BlocJams is th
 ## Solution
 
 ------
+
 ### *HTML and CSS*
+
 ------
 
 To start off, BlocJams walked me through how to set up the structure of a basic HTML document and how to apply CSS styling to a page. This is static content that we want to display once the page loads. One key takeaway from this part of the course is how to partition content, whether it is through the use of `section` tags within a single HTML page or separate HTML and CSS files to contain different pages, sections or even styling specific to a page. This makes code our cleaner, easier to read and easier to debug.
@@ -30,7 +32,9 @@ This is what our landing page looks like before we started incorporating JavaScr
 ![BlocJams Landing Page](/img/blocjams.png)
 
 ------
+
 ### *Media Queries*
+
 ------
 
 One of the key features that BlocJams walked me through was how to adjust how content is displayed across devices of different screen sizes. I learned that with media queries, I can adjust what and how content is displayed based on conditionals. For example, in the code below, if the width of device screen exceeds 640px, I can have the font-size for the HTML page scale to 112% of the default font-size and have my selling points float to the left by adding a few CSS properties to the column class.
@@ -54,7 +58,9 @@ As you can see below, with a smaller screen size, BlocJams scales the landing pa
 </div>
 
 ------
+
 ### *Diving into JavaScript and the DOM*
+
 ------
 
 Now that we have laid out the basic structure and styling for BlocJams, the next part is to incorporate JavaScript to allow a user to interact with the web application. Through building BlocJams, I learned that JavaScript is very powerful in automating tasks and performing loops.
@@ -82,7 +88,9 @@ var createSongRow = function(songNumber, songName, songLength) {
  This is where the learning truly happens and when I started to use `console.log` in my code. As a beginner, it is very easy to make syntax errors and not know where the problem really is when the desired output is not displaying. Through building BlocJams, I learned that by injecting `console.log` in various parts of your code, you can validate whether the inputs, outputs and types are correct. By doing so repeatedly, it helped immensely with debugging because it narrowed down on where the problem was.
 
 ------
+
 ### *Incorporating jQuery*
+
 ------
 
 "Don't reinvent the wheel"
@@ -104,7 +112,9 @@ var $collectionContainer = $('.album-covers');
 jQuery is much more intuitive when it comes to accessing DOM elements and improves readability. However, although jQuery has its benefits, in general, it is slower than plain JavaScript because the entire jQuery library is loaded even though you may only need a small subset of what the library offers.
 
 ------
+
 ### *Moving to AngularJS*
+
 ------
 BlocJams is now fully up and running. The next part of involves building the same application in AngularJS. In our initial implementation of BlocJams, we defined the structure of our page and utilized methods available to us through the jQuery library. In AngularJS, though, the framework is more or less defined and we are left to fill in the content. One aspect I enjoyed when learning to implement BlocJams through AngularJS is how you can add behavior such as event handlers directly to an HTML element.
 
