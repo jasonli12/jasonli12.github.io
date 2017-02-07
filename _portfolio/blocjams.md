@@ -21,7 +21,7 @@ After going through a variety of tutorials and training material, BlocJams is th
 
 ------
 
-<h4 style="font-weight: bold; font-style: italic;">HTML and CSS</h4>
+<h3 style="font-weight: bold; font-style: italic;">HTML and CSS</h3>
 
 ------
 
@@ -33,7 +33,7 @@ This is what our landing page looks like before we started incorporating JavaScr
 
 ------
 
-### *Media Queries*
+<h3 style="font-weight: bold; font-style: italic;">Media Queries</h3>
 
 ------
 
@@ -59,7 +59,7 @@ As you can see below, with a smaller screen size, BlocJams scales the landing pa
 
 ------
 
-### *Diving into JavaScript and the DOM*
+<h3 style="font-weight: bold; font-style: italic;">Diving into JavaScript and the DOM</h3>
 
 ------
 
@@ -89,7 +89,7 @@ var createSongRow = function(songNumber, songName, songLength) {
 
 ------
 
-### *Incorporating jQuery*
+<h3 style="font-weight: bold; font-style: italic;">Incorporating jQuery</h3>
 
 ------
 
@@ -113,7 +113,7 @@ jQuery is much more intuitive when it comes to accessing DOM elements and improv
 
 ------
 
-### *Moving to AngularJS*
+<h3 style="font-weight: bold; font-style: italic;">Moving to AngularJS</h3>
 
 ------
 
