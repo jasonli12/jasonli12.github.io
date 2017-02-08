@@ -117,7 +117,49 @@ jQuery is much more intuitive when it comes to accessing DOM elements and improv
 
 ------
 
-BlocJams is now fully up and running. The next part of involves building the same application in AngularJS. In our initial implementation of BlocJams, we defined the structure of our page and utilized methods available to us through the jQuery library. In AngularJS, though, the framework is more or less defined and we are left to fill in the content. One aspect I enjoyed when learning to implement BlocJams through AngularJS is how you can add behavior such as event handlers directly to an HTML element.
+BlocJams is now fully up and running. The next part involves building the same application in AngularJS. In our initial implementation of BlocJams, we defined the structure of our page and utilized methods available to us through the jQuery library. In AngularJS, though, the framework is more or less defined and we are left to fill in the content. One aspect I enjoyed when learning to implement BlocJams through AngularJS is how you can add behavior such as event handlers directly to an HTML element.
+
+Here's a simple example below:
+
+![BlocJams Album Page](/img/blocjams-album.png)
+
+This is our album view that displays all the songs from an album. When hovering over any of the song row, we want to show the play button if the song is not currently playing.
+
+*Plain JavaScript/jQuery:*
+
+{% highlight javascript %}
+
+...
+
+var playButtonTemplate = '<a class="album-song-button"><span class="ion-play"></span></a>';
+
+var onHover = function() {
+
+    if (songNumber !== currentlyPlayingSongNumber) {
+        songNumberCell.html(playButtonTemplate);
+    }
+
+};
+
+$row.hover(onHover);
+
+...
+
+{% endhighlight %}
+
+As you can see here, the Javascript that contains this functionality is deeply nested in our code in one of our JS files. There is a variable that contains the play button icon template and an if-statement that replaces the HTML in the song number cell when we hover over the song row. Now let's take a look at how this is implemented in AngularJS.
+
+*AngularJS:*
+
+{% highlight javascript %}
+
+<a class="album-song-button" ng-show="!song.playing && hovered" ng-click="album.songPlayer.play(song)"><span class="ion-play"></span></a>
+
+{% endhighlight %}
+
+Here is one area where AngularJS shines. AngularJS comes with a number of built-in directives that allow you to attach specified behavior to DOM elements. This makes it much easier to understand what behavior your app performs under what conditions instead of all of this logic being stored deeply in a separate JS file in the back end. Here we attach the `ng-show` directive to the play button template and we are essentially saying, if this song is not playing and we hover over it `(!song.playing && hovered)`, show this element that contains the play button.
+
+Another benefit of using AngularJS is for building single-page applications (SPAs), which are web applications that try to mimic a desktop app user experience. SPAs are typically very fast and responsive compared to traditional webpages because they don't require many page loads. The reason for this is when a user clicks a link and initiates a request to the server, only data related to the portion of the page that needs to be updated is returned as opposed to the entire webpage and assets being returned and reloaded.
 
 ------
 
