@@ -19,8 +19,8 @@ Now that I finally got it to work. I ran through the trivia twice and got a 5/5 
 
 ***Overall Impressions of Alexa***
 
-1. Alexa is not very good at pronunciation. Granted my questions were about Japanese anime, so there were Japanese names and terms that Alexa pronounced badly.
+* Alexa is not very good at pronunciation. Granted my questions were about Japanese anime, so there were Japanese names and terms that Alexa pronounced badly.
 
-2. Alexa needs to work on sounding more human. The places in a sentence that Alexa puts emphasis on seem out of place to the ear.
+* Alexa needs to work on sounding more human. The places in a sentence that Alexa puts emphasis on seem out of place to the ear.
 
-3. Of the two skills I've built so far, it seems like you have to be very prescriptive about what requests to expect from the user or Alexa would not know how to respond. I'm curious and interested to learn more about how Alexa learns and improves itself as an AI.
+* Of the two skills I've built so far, it seems like you have to be very prescriptive about what requests to expect from the user or Alexa would not know how to respond. I'm curious and interested to learn more about how Alexa learns and improves itself as an AI.
