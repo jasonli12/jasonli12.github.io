@@ -9,13 +9,13 @@ So what's a better way? **Alexa!!!** The idea here is whenever you make a purcha
 
 ***What Info Am I Tracking?***
 
-1. Date of purchase or expenses
+1.Date of purchase or expenses
 
-2. Type of expense
+2.Type of expense
 
-3. Description of expense
+3.Description of expense
 
-4. Cost of expense
+4.Cost of expense
 
 ***Status of Skill Development***
 
