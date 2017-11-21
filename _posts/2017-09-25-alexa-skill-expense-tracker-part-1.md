@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Third Alexa Skill - Expense Tracker
+title: Alexa Skill - Expense Tracker (Part 1)
 ---
 
 My third Alexa skill will be an Expense Tracker. I can say with confidence that I am guilty of impulse buying *at times* and not good at tracking my expenses. Part of the reason is that it is difficult to make an effort to remember, at the end of each day, to go back and look at all your receipts and log what you bought or paid for that day.
@@ -9,13 +9,11 @@ So what's a better way? **Alexa!!!** The idea here is whenever you make a purcha
 
 ***What Info Am I Tracking?***
 
-1.Date of purchase or expenses
+1.Date of purchase or expense
 
-2.Type of expense
+2.Description of expense
 
-3.Description of expense
-
-4.Cost of expense
+3.Cost of expense
 
 ***Status of Skill Development***
 
